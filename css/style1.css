@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1200px;
+  font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+  font-size: 1.6rem;
+}
+
+.header {
+  background-color: red;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  line-height: 35px;
+}
+
+.container {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 8px 0 8px 0;
+}
+
+.left {
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2rem;
+  color: black;
+  line-height: 18px;
+}
+
+.middle {
+  width: 10%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.right {
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.right img {
+  margin: 10px 0 0 0;
+}
+
+.form {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+
+.evaluation{
+  padding: 10px 0 15px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.evaluation input[type='radio']{
+  display: none;
+}
+.evaluation label{
+  position: relative;
+  padding: 10px 8px 0;
+  color: gray;
+  cursor: pointer;
+  font-size: 30px;
+}
+.evaluation label .text{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+}
+.evaluation label:hover,
+.evaluation label:hover ~ label,
+.evaluation input[type='radio']:checked ~ label{
+  color: #ffcc00;
+}
